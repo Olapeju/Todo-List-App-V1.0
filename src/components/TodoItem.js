@@ -28,8 +28,11 @@ getStyle = () => {
 
 //proptypes
 TodoItem.propTypes = {
-    todos: propTypes.object.isRequired
-  }
+  todos: propTypes.array.isRequired,
+  markComplete: propTypes.func.isRequired,
+  delTodo: propTypes.func.isRequired,
+}
+
 
 //cancel button style
 const btnStyle = {
